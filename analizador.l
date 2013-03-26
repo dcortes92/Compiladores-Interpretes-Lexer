@@ -26,15 +26,18 @@
 	struct nodo{
 		char etiqueta[20];
 		struct nodo *siguiente;
+		int linea;
+		int columna;
+		int largo;
 	};
 	
 	struct node *listaEtiquetas;
 	struct node *listaEtiquetasTemporal;
 	/*listaEtiquetas->siguiente = 0;*/
 	
-	int linea = 1, columna = 0;
-	void count(void);
-	void comentario();
+	int linea = 1, columna = 1;
+	void contar(void);
+	void comentario(void);
 %}
 
 
@@ -42,159 +45,159 @@
 %%
 
 "<!--"				{comentario();}
-"<!DOCTYPE".+">"		{printf("Elem: %s\n",yytext);}
-"<a>"				{printf("Elem: %s\n",yytext);}
-"</a>"				{printf("Elem: %s\n",yytext);}
-"<acronym>"			{printf("Elem: %s\n",yytext);}
-"</acronym>"			{printf("Elem: %s\n",yytext);}
-"<address>"			{printf("Elem: %s\n",yytext);}
-"</address>"			{printf("Elem: %s\n",yytext);}
-"<area>"			{printf("Elem: %s\n",yytext);}
-"</area>"			{printf("Elem: %s\n",yytext);}
-"<b>"				{printf("Elem: %s\n",yytext);}
-"</b>"				{printf("Elem: %s\n",yytext);}
-"<base>"			{printf("Elem: %s\n",yytext);}
-"</base>"			{printf("Elem: %s\n",yytext);}
-"<bdo>"				{printf("Elem: %s\n",yytext);}
-"</bdo>"			{printf("Elem: %s\n",yytext);}
-"<big>"				{printf("Elem: %s\n",yytext);}
-"</big>"			{printf("Elem: %s\n",yytext);}
-"<blockquote>"			{printf("Elem: %s\n",yytext);}
-"</blockquote>"			{printf("Elem: %s\n",yytext);}
-"<body>"			{printf("Elem: %s\n",yytext);}
-"</body>"			{printf("Elem: %s\n",yytext);}
-"<br>"				{printf("Elem: %s\n",yytext);}
-"</br>"				{printf("Elem: %s\n",yytext);}
-"<button>"			{printf("Elem: %s\n",yytext);}
-"</button>"			{printf("Elem: %s\n",yytext);}
-"<caption>"			{printf("Elem: %s\n",yytext);}
-"</caption>"			{printf("Elem: %s\n",yytext);}
-"<cite>"			{printf("Elem: %s\n",yytext);}
-"</cite>"			{printf("Elem: %s\n",yytext);}
-"<code>"			{printf("Elem: %s\n",yytext);}
-"</code>"			{printf("Elem: %s\n",yytext);}
-"<col>"				{printf("Elem: %s\n",yytext);}
-"</col>"			{printf("Elem: %s\n",yytext);}
-"<colgroup>"			{printf("Elem: %s\n",yytext);}
-"</colgroup>"			{printf("Elem: %s\n",yytext);}
-"<dd>"				{printf("Elem: %s\n",yytext);}
-"</dd>"				{printf("Elem: %s\n",yytext);}
-"<del>"				{printf("Elem: %s\n",yytext);}
-"</del>"			{printf("Elem: %s\n",yytext);}
-"<div>"				{printf("Elem: %s\n",yytext);}
-"</div>"			{printf("Elem: %s\n",yytext);}
-"<dfn>"				{printf("Elem: %s\n",yytext);}
-"</dfn>"			{printf("Elem: %s\n",yytext);}
-"<dl>"				{printf("Elem: %s\n",yytext);}
-"</dl>"				{printf("Elem: %s\n",yytext);}
-"<dt>"				{printf("Elem: %s\n",yytext);}
-"</dt>"				{printf("Elem: %s\n",yytext);}
-"<em>"				{printf("Elem: %s\n",yytext);}
-"</em>"				{printf("Elem: %s\n",yytext);}
-"<fieldset>"			{printf("Elem: %s\n",yytext);}
-"</fieldset>"			{printf("Elem: %s\n",yytext);}
-"<form>"			{printf("Elem: %s\n",yytext);}
-"</form>"			{printf("Elem: %s\n",yytext);}
-"<frame>"			{printf("Elem: %s\n",yytext);}
-"</frame>"			{printf("Elem: %s\n",yytext);}
-"<frameset>"			{printf("Elem: %s\n",yytext);}
-"</frameset>"			{printf("Elem: %s\n",yytext);}
-"<h"[1-6]">"			{printf("Elem: %s\n",yytext);}
-"</h"[1-6]">"			{printf("Elem: %s\n",yytext);}
-"<head>"			{printf("Elem: %s\n",yytext);}
-"</head>"			{printf("Elem: %s\n",yytext);}
-"<hr>"				{printf("Elem: %s\n",yytext);}
-"</hr>"				{printf("Elem: %s\n",yytext);}
-"<html>"			{printf("Elem: %s\n",yytext);}
-"</html>"			{printf("Elem: %s\n",yytext);}
-"<i>"				{printf("Elem: %s\n",yytext);}
-"</i>"				{printf("Elem: %s\n",yytext);}
-"<iframe>"			{printf("Elem: %s\n",yytext);}
-"</iframe>"			{printf("Elem: %s\n",yytext);}
-"<img>"				{printf("Elem: %s\n",yytext);}
-"</img>"			{printf("Elem: %s\n",yytext);}
-"<input>"			{printf("Elem: %s\n",yytext);}
-"</input>"			{printf("Elem: %s\n",yytext);}
-"<ins>"				{printf("Elem: %s\n",yytext);}
-"</ins>"			{printf("Elem: %s\n",yytext);}
-"<kbd>"				{printf("Elem: %s\n",yytext);}
-"</kbd>"			{printf("Elem: %s\n",yytext);}
-"<label>"			{printf("Elem: %s\n",yytext);}
-"</label>"			{printf("Elem: %s\n",yytext);}
-"<legend>"			{printf("Elem: %s\n",yytext);}
-"</legend>"			{printf("Elem: %s\n",yytext);}
-"<li>"				{printf("Elem: %s\n",yytext);}
-"</li>"				{printf("Elem: %s\n",yytext);}
-"<link>"			{printf("Elem: %s\n",yytext);}
-"</link>"			{printf("Elem: %s\n",yytext);}
-"<map>"				{printf("Elem: %s\n",yytext);}
-"</map>"			{printf("Elem: %s\n",yytext);}
-"<meta>"			{printf("Elem: %s\n",yytext);}
-"</meta>"			{printf("Elem: %s\n",yytext);}
-"<noframes>"			{printf("Elem: %s\n",yytext);}
-"</noframes>"			{printf("Elem: %s\n",yytext);}
-"<noscript>"			{printf("Elem: %s\n",yytext);}
-"</noscript>"			{printf("Elem: %s\n",yytext);}
-"<object>"			{printf("Elem: %s\n",yytext);}
-"</object>"			{printf("Elem: %s\n",yytext);}
-"<ol>"				{printf("Elem: %s\n",yytext);}
-"</ol>"				{printf("Elem: %s\n",yytext);}
-"<optgroup>"			{printf("Elem: %s\n",yytext);}
-"</optgroup>"			{printf("Elem: %s\n",yytext);}
-"<option>"			{printf("Elem: %s\n",yytext);}
-"</option>"			{printf("Elem: %s\n",yytext);}
-"<p>"				{printf("Elem: %s\n",yytext);}
-"</p>"				{printf("Elem: %s\n",yytext);}
-"<param>"			{printf("Elem: %s\n",yytext);}
-"</param>"			{printf("Elem: %s\n",yytext);}
-"<pre>"				{printf("Elem: %s\n",yytext);}
-"</pre>"			{printf("Elem: %s\n",yytext);}
-"<q>"				{printf("Elem: %s\n",yytext);}
-"</q>"				{printf("Elem: %s\n",yytext);}
-"<samp>"			{printf("Elem: %s\n",yytext);}
-"</samp>"			{printf("Elem: %s\n",yytext);}
-"<script>"			{printf("Elem: %s\n",yytext);}
-"</script>"			{printf("Elem: %s\n",yytext);}
-"<select>"			{printf("Elem: %s\n",yytext);}
-"</select>"			{printf("Elem: %s\n",yytext);}
-"<small>"			{printf("Elem: %s\n",yytext);}
-"</small>"			{printf("Elem: %s\n",yytext);}
-"<span>"			{printf("Elem: %s\n",yytext);}
-"</span>"			{printf("Elem: %s\n",yytext);}
-"<strong>"			{printf("Elem: %s\n",yytext);}
-"</strong>"			{printf("Elem: %s\n",yytext);}
-"<style>"			{printf("Elem: %s\n",yytext);}
-"</style>"			{printf("Elem: %s\n",yytext);}
-"<sub>"				{printf("Elem: %s\n",yytext);}
-"</sub>"			{printf("Elem: %s\n",yytext);}
-"<sup>"				{printf("Elem: %s\n",yytext);}
-"</sup>"			{printf("Elem: %s\n",yytext);}
-"<table>"			{printf("Elem: %s\n",yytext);}
-"</table>"			{printf("Elem: %s\n",yytext);}
-"<tbody>"			{printf("Elem: %s\n",yytext);}
-"</tbody>"			{printf("Elem: %s\n",yytext);}
-"<td>"				{printf("Elem: %s\n",yytext);}
-"</td>"				{printf("Elem: %s\n",yytext);}
-"<textarea>"			{printf("Elem: %s\n",yytext);}
-"</textarea>"			{printf("Elem: %s\n",yytext);}
-"<tfoot>"			{printf("Elem: %s\n",yytext);}
-"</tfoot>"			{printf("Elem: %s\n",yytext);}
-"<th>"				{printf("Elem: %s\n",yytext);}
-"</th>"				{printf("Elem: %s\n",yytext);}
-"<thead>"			{printf("Elem: %s\n",yytext);}
-"</thead>"			{printf("Elem: %s\n",yytext);}
-"<title>"			{printf("Elem: %s\n",yytext);}
-"</title>"			{printf("Elem: %s\n",yytext);}
-"<tr>"				{printf("Elem: %s\n",yytext);}
-"</tr>"				{printf("Elem: %s\n",yytext);}
-"<tt>"				{printf("Elem: %s\n",yytext);}
-"</tt>"				{printf("Elem: %s\n",yytext);}
-"<ul>"				{printf("Elem: %s\n",yytext);}
-"</ul>"				{printf("Elem: %s\n",yytext);}
-"<var>"				{printf("Elem: %s\n",yytext);}
-"</var>"			{printf("Elem: %s\n",yytext);}
-\n				{linea++;}
-.				{fprintf(stderr,"Caracter invalido en linea: %i\n", linea);}
+"<!DOCTYPE".+">"		{contar();}
+"<a>"				{contar();}
+"</a>"				{contar();}
+"<acronym>"			{contar();}
+"</acronym>"			{contar();}
+"<address>"			{contar();}
+"</address>"			{contar();}
+"<area>"			{contar();}
+"</area>"			{contar();}
+"<b>"				{contar();}
+"</b>"				{contar();}
+"<base>"			{contar();}
+"</base>"			{contar();}
+"<bdo>"				{contar();}
+"</bdo>"			{contar();}
+"<big>"				{contar();}
+"</big>"			{contar();}
+"<blockquote>"			{contar();}
+"</blockquote>"			{contar();}
+"<body>"			{contar();}
+"</body>"			{contar();}
+"<br>"				{contar();}
+"</br>"				{contar();}
+"<button>"			{contar();}
+"</button>"			{contar();}
+"<caption>"			{contar();}
+"</caption>"			{contar();}
+"<cite>"			{contar();}
+"</cite>"			{contar();}
+"<code>"			{contar();}
+"</code>"			{contar();}
+"<col>"				{contar();}
+"</col>"			{contar();}
+"<colgroup>"			{contar();}
+"</colgroup>"			{contar();}
+"<dd>"				{contar();}
+"</dd>"				{contar();}
+"<del>"				{contar();}
+"</del>"			{contar();}
+"<div>"				{contar();}
+"</div>"			{contar();}
+"<dfn>"				{contar();}
+"</dfn>"			{contar();}
+"<dl>"				{contar();}
+"</dl>"				{contar();}
+"<dt>"				{contar();}
+"</dt>"				{contar();}
+"<em>"				{contar();}
+"</em>"				{contar();}
+"<fieldset>"			{contar();}
+"</fieldset>"			{contar();}
+"<form>"			{contar();}
+"</form>"			{contar();}
+"<frame>"			{contar();}
+"</frame>"			{contar();}
+"<frameset>"			{contar();}
+"</frameset>"			{contar();}
+"<h"[1-6]">"			{contar();}
+"</h"[1-6]">"			{contar();}
+"<head>"			{contar();}
+"</head>"			{contar();}
+"<hr>"				{contar();}
+"</hr>"				{contar();}
+"<html>"			{contar();}
+"</html>"			{contar();}
+"<i>"				{contar();}
+"</i>"				{contar();}
+"<iframe>"			{contar();}
+"</iframe>"			{contar();}
+"<img>"				{contar();}
+"</img>"			{contar();}
+"<input>"			{contar();}
+"</input>"			{contar();}
+"<ins>"				{contar();}
+"</ins>"			{contar();}
+"<kbd>"				{contar();}
+"</kbd>"			{contar();}
+"<label>"			{contar();}
+"</label>"			{contar();}
+"<legend>"			{contar();}
+"</legend>"			{contar();}
+"<li>"				{contar();}
+"</li>"				{contar();}
+"<link>"			{contar();}
+"</link>"			{contar();}
+"<map>"				{contar();}
+"</map>"			{contar();}
+"<meta>"			{contar();}
+"</meta>"			{contar();}
+"<noframes>"			{contar();}
+"</noframes>"			{contar();}
+"<noscript>"			{contar();}
+"</noscript>"			{contar();}
+"<object>"			{contar();}
+"</object>"			{contar();}
+"<ol>"				{contar();}
+"</ol>"				{contar();}
+"<optgroup>"			{contar();}
+"</optgroup>"			{contar();}
+"<option>"			{contar();}
+"</option>"			{contar();}
+"<p>"				{contar();}
+"</p>"				{contar();}
+"<param>"			{contar();}
+"</param>"			{contar();}
+"<pre>"				{contar();}
+"</pre>"			{contar();}
+"<q>"				{contar();}
+"</q>"				{contar();}
+"<samp>"			{contar();}
+"</samp>"			{contar();}
+"<script>"			{contar();}
+"</script>"			{contar();}
+"<select>"			{contar();}
+"</select>"			{contar();}
+"<small>"			{contar();}
+"</small>"			{contar();}
+"<span>"			{contar();}
+"</span>"			{contar();}
+"<strong>"			{contar();}
+"</strong>"			{contar();}
+"<style>"			{contar();}
+"</style>"			{contar();}
+"<sub>"				{contar();}
+"</sub>"			{contar();}
+"<sup>"				{contar();}
+"</sup>"			{contar();}
+"<table>"			{contar();}
+"</table>"			{contar();}
+"<tbody>"			{contar();}
+"</tbody>"			{contar();}
+"<td>"				{contar();}
+"</td>"				{contar();}
+"<textarea>"			{contar();}
+"</textarea>"			{contar();}
+"<tfoot>"			{contar();}
+"</tfoot>"			{contar();}
+"<th>"				{contar();}
+"</th>"				{contar();}
+"<thead>"			{contar();}
+"</thead>"			{contar();}
+"<title>"			{contar();}
+"</title>"			{contar();}
+"<tr>"				{contar();}
+"</tr>"				{contar();}
+"<tt>"				{contar();}
+"</tt>"				{contar();}
+"<ul>"				{contar();}
+"</ul>"				{contar();}
+"<var>"				{contar();}
+"</var>"			{contar();}
+\n				{linea++;contar();}
+.				{fprintf(stderr,"Caracter inválido en linea: %d columna: %d\n", linea, columna);}
 
 %%
 
@@ -220,4 +223,16 @@ void comentario()
 		ante1 = c;
 	}
 	fprintf(stderr,"Error linea %i : comentario sin terminar\n", linea);
+}
+
+void contar()
+{
+	int i;
+	for (i = 0; yytext[i] != '\0'; i++)
+		if (yytext[i] == '\n')
+			columna = 1;
+		else if (yytext[i] == '\t')
+			columna += 8 - (columna % 8);
+		else
+			columna++;
 }
