@@ -38,6 +38,7 @@
 	int linea = 1, columna = 1;
 	void contar(void);
 	void comentario(void);
+	void error(void);
 %}
 
 
@@ -196,8 +197,9 @@
 "</ul>"				{contar();}
 "<var>"				{contar();}
 "</var>"			{contar();}
-\n				{linea++;contar();}
-.				{fprintf(stderr,"Caracter inválido en linea: %d columna: %d\n", linea, columna);}
+[ \t\v\n\f]			{contar();}
+(\\.|[^\"])*			{contar();}
+.				{error();}
 
 %%
 
@@ -222,17 +224,32 @@ void comentario()
 		ante2 = ante1;
 		ante1 = c;
 	}
-	fprintf(stderr,"Error linea %i : comentario sin terminar\n", linea);
+	fprintf(stderr,"Error en linea %d, columna %d : comentario sin terminar\n", linea, columna);
 }
 
 void contar()
 {
 	int i;
+	
 	for (i = 0; yytext[i] != '\0'; i++)
+	{			
 		if (yytext[i] == '\n')
+		{
+			linea++;
 			columna = 1;
+		}
 		else if (yytext[i] == '\t')
+		{
 			columna += 8 - (columna % 8);
+		}
 		else
+		{
 			columna++;
+		}
+	}
+}
+
+void error()
+{
+	fprintf(stderr,"Caracter inválido en linea: %d columna: %d caracter: %s\n", linea, columna, yytext);
 }
