@@ -41,8 +41,6 @@
 	void error(void);
 %}
 
-
-
 %%
 
 "<!--"				{comentario();}
@@ -110,6 +108,7 @@
 "<hr>"				{contar();}
 "</hr>"				{contar();}
 "<html>"			{contar();}
+"<html".+">"			{contar();}
 "</html>"			{contar();}
 "<i>"				{contar();}
 "</i>"				{contar();}
@@ -198,7 +197,15 @@
 "<var>"				{contar();}
 "</var>"			{contar();}
 [ \t\v\n\f]			{contar();}
-(\\.|[^\"])*			{contar();}
+"&#127;"			{error();}
+"&#0"[0-9]";"			{error();}
+"&#1"[0-9]";"			{error();}
+"&#2"[0-9]";"			{error();}
+"&#3"[0-1]";"			{error();}
+"&#".+""			{contar();}
+"&".+""				{contar();}
+"<>"				{error();}
+"</>"				{error();}
 .				{error();}
 
 %%
@@ -250,6 +257,7 @@ void contar()
 }
 
 void error()
-{
+{	
 	fprintf(stderr,"Caracter inválido en linea: %d columna: %d caracter: %s\n", linea, columna, yytext);
+	columna += yyleng;
 }
