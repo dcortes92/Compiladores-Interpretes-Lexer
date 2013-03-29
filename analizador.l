@@ -1,5 +1,6 @@
 %{
 	#include <stdio.h>
+	#include "Tokens.h"
 	
 	/*mae tengo mas o menos una idea de como hacer algo que nos ayuda pero no se como 
 	  hacer las listas que tengo en mente.
@@ -45,7 +46,7 @@
 
 "<!--"				{comentario();}
 "<!DOCTYPE".+">"		{contar();}
-"<a>"				{contar();}
+"<a>"				{printf("%d\n", A);return A;}
 "</a>"				{contar();}
 "<acronym>"			{contar();}
 "</acronym>"			{contar();}
