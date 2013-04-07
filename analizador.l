@@ -197,6 +197,7 @@
 "</ul>"				{contar();}
 "<var>"				{contar();}
 "</var>"			{contar();}
+
 [ \t\v\n\f]			{contar();}
 "&#127;"			{error();}
 "&#0"[0-9]";"			{error();}
