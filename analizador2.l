@@ -46,7 +46,8 @@ String		[^<>]
 Digito		[0-9]
 Espacios	[ ]*
 Etiqueta	[a-z][a-z0-9]*{Espacios}
-Atributo	{String}*(\=)?{Espacios}(\")?{String}*(\")?
+Comillas	[\"]
+Atributo	{String}*(\=)?{Espacios}{Comillas}?{String}*{Comillas}?
 Apertura	[\<]
 AperturaC	[\<][\/]
 Cerradura	[\>]
@@ -56,6 +57,8 @@ PComa		[\;]
 
 %%
 
+"<!--"							{comentario();}
+"<!DOCTYPE "{Espacios}"html "{Espacios}"PUBLIC ".+">"					{contar();}
 {Espacios}						{contar();printf("e 1\n");}
 \n							{contar();printf("e 2\n");}
 {Apertura}{Etiqueta}{Atributo}{Cerradura}		{contar();printf("e 3\n");}
@@ -63,7 +66,7 @@ PComa		[\;]
 
 {Amp}{Hash}[1-2]?{Digito}{PComa}			{error();}
 {Amp}{Hash}[3][0-1]{PComa}				{error();}
-"&#127;"						{error(); return 1;}
+"&#127;"						{error();}
 {Amp}{Hash}{String}+{PComa}				{contar();printf("e 5\n");}
 {Amp}{String}+{PComa}					{contar();printf("e 6\n");}
 "<>"							{error();}
