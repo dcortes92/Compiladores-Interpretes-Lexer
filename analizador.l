@@ -57,8 +57,8 @@ PComa		[\;]
 %%
 
 
-"<!DOCTYPE"{String}+">"					{contar();}
-[ \n\t]+						{contar();}
+"<!DOCTYPE"{String}+">"				{printf("Encontro tag !DOCTYPE en linea: %d y columna: %d\n",linea, columna);contar();}
+[ \n\t]+					{printf("Encontro Enter-Tab\n",yytext);contar();}
 
 "<a>"						{printf("Encontro tag A en linea: %d y columna: %d\n",linea, columna);contar();}
 "<a "{Atributo}*">"				{printf("Encontro tag A en linea: %d y columna: %d\n",linea, columna);contar();}
@@ -331,17 +331,17 @@ PComa		[\;]
 "<var "{Atributo}*">"				{printf("Encontro tag VAR en linea: %d y columna: %d\n",linea, columna);contar();}
 "</var>"					{printf("Encontro tag VAR en linea: %d y columna: %d\n",linea, columna);contar();}
 
-{Amp}{Hash}[1-2]?{Digito}{PComa}			{error();return ERROR;}
-{Amp}{Hash}[3][0-1]{PComa}				{error();return ERROR;}
-"&#127;"						{error();return ERROR;}
-"<>"							{error();return ERROR;}
-"</>"							{error();return ERROR;}
+{Amp}{Hash}[1-2]?{Digito}{PComa}		{error();return ERROR;}
+{Amp}{Hash}[3][0-1]{PComa}			{error();return ERROR;}
+"&#127;"					{error();return ERROR;}
+"<>"						{error();return ERROR;}
+"</>"						{error();return ERROR;}
 
-"<"{Etiqueta}{Cerradura}?				{contar();printf("e\n");}
-{Atributo}*{Cerradura}					{contar();printf("i\n");}
+"<"{Etiqueta}{Cerradura}?			{contar();printf("e\n");}
+{Atributo}*{Cerradura}				{contar();printf("i\n");}
 
-{Amp}{Hash}{String}+{PComa}				{contar();}
-{Amp}{String}+{PComa}					{contar();}
+{Amp}{Hash}{String}+{PComa}			{contar();}
+{Amp}{String}+{PComa}				{contar();}
 
 
 %%
