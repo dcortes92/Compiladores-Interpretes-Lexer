@@ -57,21 +57,20 @@ PComa		[\;]
 
 %%
 
-"<!--"							{comentario();}
+"<!--"																	{comentario();}
 "<!DOCTYPE "{Espacios}"html "{Espacios}"PUBLIC ".+">"					{contar();}
-{Espacios}						{contar();printf("e 1\n");}
-\n							{contar();printf("e 2\n");}
-{Apertura}{Etiqueta}{Atributo}{Cerradura}		{contar();printf("e 3\n");}
-{AperturaC}{Etiqueta}{Cerradura}	 		{contar();printf("e 4\n");}
-
-{Amp}{Hash}[1-2]?{Digito}{PComa}			{error();}
-{Amp}{Hash}[3][0-1]{PComa}				{error();}
-"&#127;"						{error();}
-{Amp}{Hash}{String}+{PComa}				{contar();printf("e 5\n");}
-{Amp}{String}+{PComa}					{contar();printf("e 6\n");}
-"<>"							{error();}
-"</>"							{error();}
-{String}						{contar();printf("e 7\n");}
+{Espacios}																{contar();printf("e 1\n");}
+\n																		{contar();printf("e 2\n");}
+{Apertura}{Etiqueta}{Atributo}{Cerradura}								{contar();printf("e 3\n");}
+{AperturaC}{Etiqueta}{Cerradura}	 									{contar();printf("e 4\n");}
+{Amp}{Hash}[1-2]?{Digito}{PComa}										{error();}
+{Amp}{Hash}[3][0-1]{PComa}												{error();}
+"&#127;"																{error();}
+{Amp}{Hash}{String}+{PComa}												{contar();printf("e 5\n");}
+{Amp}{String}+{PComa}													{contar();printf("e 6\n");}
+"<>"																	{error();}
+"</>"																	{error();}
+{String}																{contar();printf("e 7\n");}
 
 %%
 
