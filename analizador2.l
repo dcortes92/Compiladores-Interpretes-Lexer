@@ -56,7 +56,6 @@ PComa		[\;]
 
 %%
 
-<<<<<<< HEAD
 "<!--"																	{comentario();}
 "<!DOCTYPE "{Espacios}"html "{Espacios}"PUBLIC ".+">"					{contar();}
 {Espacios}																{contar();printf("e 1\n");}
@@ -71,11 +70,9 @@ PComa		[\;]
 "<>"																	{error();}
 "</>"																	{error();}
 {String}																{contar();printf("e 7\n");}
-=======
 "<!--"							{comentario();}
 "<!DOCTYPE"{String}+">"					{contar();}
 [ \n\t]+						{contar();}
->>>>>>> 6a38ef06afa8948539a8c7f36c4f035d673474e7
 
 "<a "{Atributo}*">"					{contar();}
 "</a>"							{contar();}
