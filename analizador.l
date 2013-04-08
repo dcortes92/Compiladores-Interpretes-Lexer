@@ -412,7 +412,6 @@ int retornarAtributo(char* c)
 
 void contar()
 {
-	printf("%s", yytext);
 	int i;		
 	for (i = 0; yytext[i] != '\0'; i++)
 	{			
