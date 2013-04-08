@@ -1,3 +1,4 @@
+#define		ERROR		 1
 #define 	A		 255
 #define 	_A		 256
 #define 	ACRONYM		 257

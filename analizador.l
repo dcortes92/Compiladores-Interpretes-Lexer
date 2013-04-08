@@ -331,12 +331,11 @@ PComa		[\;]
 "<var "{Atributo}*">"				{printf("Encontro tag VAR en linea: %d y columna: %d",linea, columna);contar();}
 "</var>"					{printf("Encontro tag VAR en linea: %d y columna: %d",linea, columna);contar();}
 
-
-{Amp}{Hash}[1-2]?{Digito}{PComa}			{printf("11\n");error();}
-{Amp}{Hash}[3][0-1]{PComa}				{printf("22\n");error();}
-"&#127;"						{printf("33\n");error();}
-"<>"							{printf("44\n");error();}
-"</>"							{printf("55\n");error();}
+{Amp}{Hash}[1-2]?{Digito}{PComa}			{error();return ERROR;}
+{Amp}{Hash}[3][0-1]{PComa}				{error();return ERROR;}
+"&#127;"						{error();return ERROR;}
+"<>"							{error();return ERROR;}
+"</>"							{error();return ERROR;}
 
 "<"{Etiqueta}{Cerradura}?				{contar();printf("e\n");}
 {Atributo}*{Cerradura}					{contar();printf("i\n");}
