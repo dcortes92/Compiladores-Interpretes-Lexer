@@ -57,9 +57,9 @@ PComa		[\;]
 %%
 
 
+"<!--"							{printf("Encontr tag <!-- en linea: %d y columna: %d\n", linea, columna);comentario();}
 "<!DOCTYPE"{String}+">"				{printf("Encontro tag !DOCTYPE en linea: %d y columna: %d\n",linea, columna);contar();}
 [ \n\t]+					{printf("Encontro Enter-Tab-Space\n",yytext);contar();}
-
 "<a>"						{printf("Encontro tag A en linea: %d y columna: %d\n",linea, columna);contar();}
 "<a "{Atributo}*">"				{printf("Encontro tag A en linea: %d y columna: %d\n",linea, columna);contar();}
 "</a>"						{printf("Encontro tag A en linea: %d y columna: %d\n",linea, columna);contar();}
