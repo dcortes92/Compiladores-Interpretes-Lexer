@@ -36535,7 +36535,11 @@ char *yytext;
 	void contar(void);
 	void comentario(void);
 	void error(void);
+<<<<<<< HEAD
 #line 36539 "lex.yy.c"
+=======
+#line 889 "lex.yy.c"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 
 #define INITIAL 0
 
@@ -36722,10 +36726,17 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
     
+<<<<<<< HEAD
 #line 57 "analizador2.l"
 
 
 #line 36729 "lex.yy.c"
+=======
+#line 45 "analizador.l"
+
+
+#line 1079 "lex.yy.c"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 
 	if ( !(yy_init) )
 		{
@@ -36810,860 +36821,1483 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 59 "analizador2.l"
+=======
+#line 47 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {comentario();}
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 60 "analizador2.l"
+=======
+#line 48 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 61 "analizador2.l"
 {contar();}
+=======
+#line 49 "analizador.l"
+{printf("%d\n", A);return A;}
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 	YY_BREAK
 case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 63 "analizador2.l"
+=======
+#line 50 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 64 "analizador2.l"
+=======
+#line 51 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 65 "analizador2.l"
+=======
+#line 52 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 66 "analizador2.l"
+=======
+#line 53 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 8:
 /* rule 8 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 67 "analizador2.l"
+=======
+#line 54 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 68 "analizador2.l"
+=======
+#line 55 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 69 "analizador2.l"
+=======
+#line 56 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 70 "analizador2.l"
+=======
+#line 57 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 12:
 /* rule 12 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 71 "analizador2.l"
+=======
+#line 58 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 72 "analizador2.l"
+=======
+#line 59 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 14:
 /* rule 14 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 73 "analizador2.l"
+=======
+#line 60 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 74 "analizador2.l"
+=======
+#line 61 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 16:
 /* rule 16 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 75 "analizador2.l"
+=======
+#line 62 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 76 "analizador2.l"
+=======
+#line 63 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 18:
 /* rule 18 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 77 "analizador2.l"
+=======
+#line 64 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 78 "analizador2.l"
+=======
+#line 65 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 20:
 /* rule 20 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 79 "analizador2.l"
+=======
+#line 66 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 80 "analizador2.l"
+=======
+#line 67 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 22:
 /* rule 22 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 81 "analizador2.l"
+=======
+#line 68 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 82 "analizador2.l"
+=======
+#line 69 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 24:
 /* rule 24 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 83 "analizador2.l"
+=======
+#line 70 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 84 "analizador2.l"
+=======
+#line 71 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 26:
 /* rule 26 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 85 "analizador2.l"
+=======
+#line 72 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 86 "analizador2.l"
+=======
+#line 73 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 28:
 /* rule 28 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 87 "analizador2.l"
+=======
+#line 74 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 88 "analizador2.l"
+=======
+#line 75 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 30:
 /* rule 30 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 89 "analizador2.l"
+=======
+#line 76 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 90 "analizador2.l"
+=======
+#line 77 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 32:
 /* rule 32 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 91 "analizador2.l"
+=======
+#line 78 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 92 "analizador2.l"
+=======
+#line 79 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 34:
 /* rule 34 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 93 "analizador2.l"
+=======
+#line 80 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 94 "analizador2.l"
+=======
+#line 81 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 36:
 /* rule 36 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 95 "analizador2.l"
+=======
+#line 82 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 96 "analizador2.l"
+=======
+#line 83 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 38:
 /* rule 38 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 97 "analizador2.l"
+=======
+#line 84 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 98 "analizador2.l"
+=======
+#line 85 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 40:
 /* rule 40 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 99 "analizador2.l"
+=======
+#line 86 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 100 "analizador2.l"
+=======
+#line 87 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 42:
 /* rule 42 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 101 "analizador2.l"
+=======
+#line 88 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 102 "analizador2.l"
+=======
+#line 89 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 44:
 /* rule 44 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 103 "analizador2.l"
+=======
+#line 90 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 104 "analizador2.l"
+=======
+#line 91 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 46:
 /* rule 46 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 105 "analizador2.l"
+=======
+#line 92 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 106 "analizador2.l"
+=======
+#line 93 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 48:
 /* rule 48 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 107 "analizador2.l"
+=======
+#line 94 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 108 "analizador2.l"
+=======
+#line 95 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 50:
 /* rule 50 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 109 "analizador2.l"
+=======
+#line 96 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 110 "analizador2.l"
+=======
+#line 97 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 52:
 /* rule 52 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 111 "analizador2.l"
+=======
+#line 98 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 112 "analizador2.l"
+=======
+#line 99 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 54:
 /* rule 54 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 113 "analizador2.l"
+=======
+#line 100 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 114 "analizador2.l"
+=======
+#line 101 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 56:
 /* rule 56 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 115 "analizador2.l"
+=======
+#line 102 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 116 "analizador2.l"
+=======
+#line 103 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 58:
 /* rule 58 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 117 "analizador2.l"
+=======
+#line 104 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 118 "analizador2.l"
+=======
+#line 105 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 60:
 /* rule 60 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 119 "analizador2.l"
+=======
+#line 106 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 120 "analizador2.l"
+=======
+#line 107 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 62:
 /* rule 62 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 121 "analizador2.l"
+=======
+#line 108 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 122 "analizador2.l"
+=======
+#line 109 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 64:
 /* rule 64 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 123 "analizador2.l"
+=======
+#line 110 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 124 "analizador2.l"
+=======
+#line 111 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 66:
 /* rule 66 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 125 "analizador2.l"
+=======
+#line 112 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 67:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 126 "analizador2.l"
+=======
+#line 113 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 68:
 /* rule 68 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 127 "analizador2.l"
+=======
+#line 114 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 128 "analizador2.l"
+=======
+#line 115 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 70:
 /* rule 70 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 129 "analizador2.l"
+=======
+#line 116 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 130 "analizador2.l"
+=======
+#line 117 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 72:
 /* rule 72 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 131 "analizador2.l"
+=======
+#line 118 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 132 "analizador2.l"
+=======
+#line 119 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 74:
 /* rule 74 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 133 "analizador2.l"
+=======
+#line 120 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 75:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 134 "analizador2.l"
+=======
+#line 121 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 76:
 /* rule 76 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 135 "analizador2.l"
+=======
+#line 122 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 77:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 136 "analizador2.l"
+=======
+#line 123 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 78:
 /* rule 78 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 137 "analizador2.l"
+=======
+#line 124 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 79:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 138 "analizador2.l"
+=======
+#line 125 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 80:
 /* rule 80 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 139 "analizador2.l"
+=======
+#line 126 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 81:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 140 "analizador2.l"
+=======
+#line 127 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 82:
 /* rule 82 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 141 "analizador2.l"
+=======
+#line 128 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 83:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 142 "analizador2.l"
+=======
+#line 129 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 84:
 /* rule 84 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 143 "analizador2.l"
+=======
+#line 130 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 85:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 144 "analizador2.l"
+=======
+#line 131 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 86:
 /* rule 86 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 145 "analizador2.l"
+=======
+#line 132 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 87:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 146 "analizador2.l"
+=======
+#line 133 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 88:
 /* rule 88 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 147 "analizador2.l"
+=======
+#line 134 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 89:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 148 "analizador2.l"
+=======
+#line 135 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 90:
 /* rule 90 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 149 "analizador2.l"
+=======
+#line 136 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 91:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 150 "analizador2.l"
+=======
+#line 137 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 92:
 /* rule 92 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 151 "analizador2.l"
+=======
+#line 138 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 93:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 152 "analizador2.l"
+=======
+#line 139 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 94:
 /* rule 94 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 153 "analizador2.l"
+=======
+#line 140 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 95:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 154 "analizador2.l"
+=======
+#line 141 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 96:
 /* rule 96 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 155 "analizador2.l"
+=======
+#line 142 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 97:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 156 "analizador2.l"
+=======
+#line 143 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 98:
 /* rule 98 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 157 "analizador2.l"
+=======
+#line 144 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 99:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 158 "analizador2.l"
+=======
+#line 145 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 100:
 /* rule 100 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 159 "analizador2.l"
+=======
+#line 146 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 101:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 160 "analizador2.l"
+=======
+#line 147 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 102:
 /* rule 102 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 161 "analizador2.l"
+=======
+#line 148 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 103:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 162 "analizador2.l"
+=======
+#line 149 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 104:
 /* rule 104 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 163 "analizador2.l"
+=======
+#line 150 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 105:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 164 "analizador2.l"
+=======
+#line 151 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 106:
 /* rule 106 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 165 "analizador2.l"
+=======
+#line 152 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 107:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 166 "analizador2.l"
+=======
+#line 153 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 108:
 /* rule 108 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 167 "analizador2.l"
+=======
+#line 154 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 109:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 168 "analizador2.l"
+=======
+#line 155 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 110:
 /* rule 110 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 169 "analizador2.l"
+=======
+#line 156 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 111:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 170 "analizador2.l"
+=======
+#line 157 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 112:
 /* rule 112 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 171 "analizador2.l"
+=======
+#line 158 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 113:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 172 "analizador2.l"
+=======
+#line 159 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 114:
 /* rule 114 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 173 "analizador2.l"
+=======
+#line 160 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 115:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 174 "analizador2.l"
+=======
+#line 161 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 116:
 /* rule 116 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 175 "analizador2.l"
+=======
+#line 162 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 117:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 176 "analizador2.l"
+=======
+#line 163 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 118:
 /* rule 118 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 177 "analizador2.l"
+=======
+#line 164 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 119:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 178 "analizador2.l"
+=======
+#line 165 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 120:
 /* rule 120 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 179 "analizador2.l"
+=======
+#line 166 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 121:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 180 "analizador2.l"
+=======
+#line 167 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 122:
 /* rule 122 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 181 "analizador2.l"
+=======
+#line 168 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 123:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 182 "analizador2.l"
+=======
+#line 169 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 124:
 /* rule 124 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 183 "analizador2.l"
+=======
+#line 170 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 125:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 184 "analizador2.l"
+=======
+#line 171 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 126:
 /* rule 126 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 185 "analizador2.l"
+=======
+#line 172 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 127:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 186 "analizador2.l"
+=======
+#line 173 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 128:
 /* rule 128 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 187 "analizador2.l"
+=======
+#line 174 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 129:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 188 "analizador2.l"
+=======
+#line 175 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 130:
 /* rule 130 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 189 "analizador2.l"
+=======
+#line 176 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 131:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 190 "analizador2.l"
+=======
+#line 177 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 132:
 /* rule 132 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 191 "analizador2.l"
+=======
+#line 178 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 133:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 192 "analizador2.l"
+=======
+#line 179 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 134:
 /* rule 134 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 193 "analizador2.l"
+=======
+#line 180 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 135:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 194 "analizador2.l"
+=======
+#line 181 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 136:
 /* rule 136 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 195 "analizador2.l"
+=======
+#line 182 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 137:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 196 "analizador2.l"
+=======
+#line 183 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 138:
 /* rule 138 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 197 "analizador2.l"
+=======
+#line 184 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 139:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 198 "analizador2.l"
+=======
+#line 185 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 140:
 /* rule 140 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 199 "analizador2.l"
+=======
+#line 186 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 141:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 200 "analizador2.l"
+=======
+#line 187 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 142:
 /* rule 142 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 201 "analizador2.l"
+=======
+#line 188 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 143:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 202 "analizador2.l"
+=======
+#line 189 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 144:
 /* rule 144 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 203 "analizador2.l"
+=======
+#line 190 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 145:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 204 "analizador2.l"
+=======
+#line 191 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 146:
 /* rule 146 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 205 "analizador2.l"
+=======
+#line 192 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 147:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 206 "analizador2.l"
+=======
+#line 193 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 148:
 /* rule 148 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 207 "analizador2.l"
+=======
+#line 194 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 149:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 208 "analizador2.l"
+=======
+#line 195 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 150:
 /* rule 150 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 209 "analizador2.l"
+=======
+#line 196 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 151:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 210 "analizador2.l"
+=======
+#line 197 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 152:
 /* rule 152 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 211 "analizador2.l"
+=======
+#line 198 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 153:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 212 "analizador2.l"
+=======
+#line 199 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 154:
 /* rule 154 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 213 "analizador2.l"
+=======
+#line 201 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 155:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 214 "analizador2.l"
 {contar();}
+=======
+#line 202 "analizador.l"
+{error();}
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 	YY_BREAK
 case 156:
 /* rule 156 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 215 "analizador2.l"
 {contar();}
 	YY_BREAK
@@ -37671,10 +38305,20 @@ case 157:
 YY_RULE_SETUP
 #line 216 "analizador2.l"
 {contar();}
+=======
+#line 203 "analizador.l"
+{error();}
+	YY_BREAK
+case 157:
+YY_RULE_SETUP
+#line 204 "analizador.l"
+{error();}
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 	YY_BREAK
 case 158:
 /* rule 158 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 217 "analizador2.l"
 {contar();}
 	YY_BREAK
@@ -37682,21 +38326,39 @@ case 159:
 YY_RULE_SETUP
 #line 218 "analizador2.l"
 {contar();}
+=======
+#line 205 "analizador.l"
+{error();}
+	YY_BREAK
+case 159:
+YY_RULE_SETUP
+#line 206 "analizador.l"
+{error();}
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 	YY_BREAK
 case 160:
 /* rule 160 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 219 "analizador2.l"
+=======
+#line 207 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 161:
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 220 "analizador2.l"
+=======
+#line 208 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 {contar();}
 	YY_BREAK
 case 162:
 /* rule 162 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 221 "analizador2.l"
 {contar();}
 	YY_BREAK
@@ -37704,10 +38366,20 @@ case 163:
 YY_RULE_SETUP
 #line 222 "analizador2.l"
 {contar();}
+=======
+#line 209 "analizador.l"
+{error();}
+	YY_BREAK
+case 163:
+YY_RULE_SETUP
+#line 210 "analizador.l"
+{error();}
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 	YY_BREAK
 case 164:
 /* rule 164 can match eol */
 YY_RULE_SETUP
+<<<<<<< HEAD
 #line 223 "analizador2.l"
 {contar();}
 	YY_BREAK
@@ -37874,6 +38546,17 @@ YY_RULE_SETUP
 ECHO;
 	YY_BREAK
 #line 37877 "lex.yy.c"
+=======
+#line 211 "analizador.l"
+{error();}
+	YY_BREAK
+case 165:
+YY_RULE_SETUP
+#line 213 "analizador.l"
+ECHO;
+	YY_BREAK
+#line 1988 "lex.yy.c"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -38871,7 +39554,11 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
+<<<<<<< HEAD
 #line 258 "analizador2.l"
+=======
+#line 213 "analizador.l"
+>>>>>>> c759304e1e03bf107c16f75540e76b6068d20df6
 
 
 
