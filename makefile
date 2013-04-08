@@ -1,3 +1,3 @@
-analizador: analizador2.l
-	flex analizador2.l
-	gcc -o analizador lex.yy.c -lfl
+analizador: analizador.l
+	flex analizador.l
+	gcc -o scanner lex.yy.c -lfl
