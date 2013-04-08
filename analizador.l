@@ -42,7 +42,7 @@
 	void error(void);
 %}
 
-String		[^<>&Ññ]
+String		[^<>&]
 StringC		[^\"]
 Digito		[0-9]
 Espacios	[ ]*
@@ -342,6 +342,7 @@ PComa		[\;]
 {Amp}{Hash}{String}+{PComa}			{contar();}
 {Amp}{String}+{PComa}				{contar();}
 
+{String}+					{printf("Encontro string: %s  linea %d y columna %d\n", yytext,linea, columna);contar();}
 
 %%
 
