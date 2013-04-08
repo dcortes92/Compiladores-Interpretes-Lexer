@@ -58,7 +58,7 @@ PComa		[\;]
 
 
 "<!DOCTYPE"{String}+">"				{printf("Encontro tag !DOCTYPE en linea: %d y columna: %d\n",linea, columna);contar();}
-[ \n\t]+					{printf("Encontro Enter-Tab\n",yytext);contar();}
+[ \n\t]+					{printf("Encontro Enter-Tab-Space\n",yytext);contar();}
 
 "<a>"						{printf("Encontro tag A en linea: %d y columna: %d\n",linea, columna);contar();}
 "<a "{Atributo}*">"				{printf("Encontro tag A en linea: %d y columna: %d\n",linea, columna);contar();}
@@ -337,8 +337,7 @@ PComa		[\;]
 "<>"						{error();return ERROR;}
 "</>"						{error();return ERROR;}
 
-"<"{Etiqueta}{Cerradura}?			{contar();printf("e\n");}
-{Atributo}*{Cerradura}				{contar();printf("i\n");}
+"<"{Etiqueta}{Atributo}*{Cerradura}		{printf("Encontro tag generico linea %d y columna %d\n", linea, columna);contar();}
 
 {Amp}{Hash}{String}+{PComa}			{contar();}
 {Amp}{String}+{PComa}				{contar();}
