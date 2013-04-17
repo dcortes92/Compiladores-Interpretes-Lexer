@@ -16,11 +16,11 @@ nytprof.out
 pm_to_blib
 *~
 lex.yy.c
-<<<<<<< HEAD
+HEAD
 scanner
-=======
 analizador
 scanner
 hola
 analizador2.l
->>>>>>> 228b3c00875634af0a0a86744fd58c06dbc54136
+*.odt
+*.rtf
